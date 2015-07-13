@@ -1,8 +1,8 @@
-## getting full dataset
+## getting full dataset to process
 full_data <- read.csv("./household_power_consumption.txt", header=T, sep=";", 
                       na.strings="?", check.names=F, stringsAsFactors=F, 
                       comment.char="", quote='\"')
-
+    
 full_data$Date <- as.Date(full_data$Date, format="%d/%m/%Y")
 
 ## subsetting the data
